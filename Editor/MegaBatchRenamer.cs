@@ -9,7 +9,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Editor.BatchRenamer
+namespace MegaBatchRenamer.Editor
 {
     public class MegaBatchRenamer : EditorWindow
     {

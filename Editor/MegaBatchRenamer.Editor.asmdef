@@ -1,6 +1,6 @@
 {
   "name": "MegaBatchRenamer.Editor",
-  "rootNamespace": "Editor.BatchRenamer",
+  "rootNamespace": "MegaBatchRenamer.Editor",
   "references": [],
   "includePlatforms": [
     "Editor"
