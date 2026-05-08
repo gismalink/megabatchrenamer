@@ -29,7 +29,7 @@ In Unity Package Manager:
 3. Use:
 
 ```text
-https://github.com/<your-user>/<your-repo>.git?path=/Packages/com.davidshvartsman.megabatchrenamer
+https://github.com/gismalink/megabatchrenamer.git
 ```
 
 ## Open Tool
