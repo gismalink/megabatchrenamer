@@ -1043,7 +1043,7 @@ namespace MegaBatchRenamer.Editor
 
         private void CollectSceneTargets(List<RenameTarget> output)
         {
-            var seen = new HashSet<int>();
+            var seen = new HashSet<GameObject>();
 
             foreach (GameObject obj in Selection.gameObjects)
             {
@@ -1053,7 +1053,7 @@ namespace MegaBatchRenamer.Editor
                 {
                     CollectSceneRecursive(obj.transform, output, seen);
                 }
-                else if (seen.Add(obj.GetInstanceID()))
+                else if (seen.Add(obj))
                 {
                     if (PassesSceneFilter(obj))
                         output.Add(RenameTarget.FromSceneObject(obj));
@@ -1061,12 +1061,12 @@ namespace MegaBatchRenamer.Editor
             }
         }
 
-        private void CollectSceneRecursive(Transform t, List<RenameTarget> output, HashSet<int> seen)
+        private void CollectSceneRecursive(Transform t, List<RenameTarget> output, HashSet<GameObject> seen)
         {
             if (t == null) return;
             var go = t.gameObject;
 
-            if (seen.Add(go.GetInstanceID()))
+            if (seen.Add(go))
             {
                 if (PassesSceneFilter(go))
                     output.Add(RenameTarget.FromSceneObject(go));

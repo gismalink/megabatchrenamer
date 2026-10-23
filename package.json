@@ -1,6 +1,6 @@
 {
   "name": "com.davidshvartsman.megabatchrenamer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Mega Batch Renamer",
   "description": "Batch rename tool for Scene GameObjects and Project assets with token support and preview.",
   "unity": "2021.3",
